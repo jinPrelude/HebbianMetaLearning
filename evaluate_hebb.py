@@ -213,7 +213,7 @@ def evaluate_hebb(hebb_rule : str, environment : str, init_weights = 'uni', rend
 def main(argv):
     parser = argparse.ArgumentParser()
     
-    parser.add_argument('--environment', type=str, default='CarRacing-v0', metavar='', help='Gym environment: any OpenAI Gym may be used')
+    parser.add_argument('--environment', type=str, default='AntBulletEnv-v0', metavar='', help='Gym environment: any OpenAI Gym may be used')
     parser.add_argument('--hebb_rule', type=str,  default = 'ABCD_lr', metavar='', help='Hebbian rule type: A, AD, AD_lr, ABC, ABC_lr, ABCD, ABCD_lr, ABCD_lr_D_out, ABCD_lr_D_in_and_out')    
     parser.add_argument('--init_weights', type=str,  default = 'uni', metavar='', help='Weight initilisation distribution used to sample from at each episode: uni, normal, default, xa_uni, sparse, ka_uni')
     parser.add_argument('--path_hebb', type=str,  default = None, metavar='', help='path to the evolved Hebbian coefficients')

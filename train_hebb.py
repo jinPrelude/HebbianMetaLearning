@@ -15,7 +15,7 @@ gym.logger.set_level(40)
 def main(argv):
     parser = argparse.ArgumentParser()
       
-    parser.add_argument('--environment', type=str, default='CarRacing-v0', metavar='', help='Environment: any OpenAI Gym or pyBullet environment may be used')
+    parser.add_argument('--environment', type=str, default='AntBulletEnv-v0', metavar='', help='Environment: any OpenAI Gym or pyBullet environment may be used')
     parser.add_argument('--hebb_rule', type=str,  default = 'ABCD_lr', metavar='', help='Hebbian rule type: A, AD, AD_lr, ABC, ABC_lr, ABCD, ABCD_lr, ABCD_lr_D_out, ABCD_lr_D_in_and_out')
     parser.add_argument('--popsize', type=int,  default = 200, metavar='', help='Population size.') 
     parser.add_argument('--lr', type=float,  default = 0.2, metavar='', help='ES learning rate.') 

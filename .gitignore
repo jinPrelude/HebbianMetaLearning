@@ -12,3 +12,4 @@ evaluate_for_pca.py
 evaluate_vw.py
 jobs/
 terminal_outputs/
+wandb/
